@@ -10,12 +10,12 @@ export default (req: Request, res: Response) => {
     const fibN: number = fibonacci(parsedNum);
 
     if (fibN >= 0) {
-      result = "fibonacci(${num}) is ${fibN}";
+      result = `fibonacci(${num}) is ${fibN}`;
     } else {
-      result = "fibonacci(${num}) is undefined";
+      result = `fibonacci(${num}) is undefined`;
     }
   } else {
-    result = "Invalid input: ${num}";
+    result = `Invalid input: ${num}`;
   }
 
   res?.send(result);
